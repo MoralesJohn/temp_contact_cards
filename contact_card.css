@@ -1,0 +1,78 @@
+/***** CSS Reset *****/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0 none;
+	font-size: 100%;
+	font-family: verdana, sans-serif;
+	vertical-align: top;
+}
+
+/***** Wrapper *****/
+
+#wrapper {
+	width: 970px;
+	margin: 20px auto;
+}
+
+/***** Data Entry *****/
+
+#data_entry {
+	width: 300px;
+	display: inline-block;
+}
+
+h1 {
+	font-size: 16px;
+	margin: 20px 0px;
+}
+
+input {
+	border: 1px solid #000000;
+	margin: 10px 20px 20px;
+}
+
+#details {
+	width: 250px;
+	height: 120px;
+	font-family: verdana, sans-serif;
+	border: 1px solid #000000;
+	margin: 10px 20px 20px;
+}
+
+button {
+	margin: 20px 0px;
+	padding: 5px 10px;
+	background: #00A000;
+	border: 1px solid #909090;
+	border-radius: 5px;
+}
+
+/***** Card Catalog *****/
+
+#card_cat {
+	display: inline-block;
+	width: 65%;
+	border: 1px solid black;
+}
+
+#card_cat div {
+	margin: 15px;
+	width: 250px;
+	height: 200px;
+	background-color: #B0B0B0;
+	float: left;
+	border: 1px solid black;
+
+}
+
+h2 {
+	text-align: center;	
+	font-size: 13px;
+	margin: 5px 0px;
+}
+
+.inst {
+	text-align: center;
+}

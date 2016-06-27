@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Card</title>
+	<meta name="description" content="Temporary Contact Card Storage">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="contact_card.css">
+
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		function card_flip(){
+			$(".card").click(function(){
+				$(this).children().toggle();
+			});
+		};
+
+		$(document).ready(function (){
+			card_flip();
+
+			$("#add_cont").click(function(){
+				$("#card_cat").append("<div class='card'><h2 class='name1 card_info'>"+$("#first_name").val()+"</h2><h2 class='name2 card_info'>"+$("#last_name").val()+"</h2><p class='inst card_info'>Click to view details</p><p class='desc card_info' style='display:none;'>"+$("#details").val()+"</p>");
+				$(".field").val("");
+				card_flip();
+			});
+		});
+	</script>	
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="data_entry">
+			<h1>Enter the people you need to track</h1>
+			<p>First Name:</p>
+			<input type="text" id="first_name" class="field" />
+			<p>Last Name:</p>
+			<input type="text" id="last_name" class="field" />
+			<p>Description:</p>
+			<textarea rows="4" cols="40" id="details" class="field"></textarea>
+			<button id="add_cont">Add Contact</button>
+		</div>  <!-- #data_entry -->
+		<div id="card_cat"></div>
+	</div>  <!-- #wrapper -->
+</body>
+</html>
